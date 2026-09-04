@@ -44,12 +44,14 @@ public class SecondHighest {
                 first=arr[i];
             }
             else if (second<arr[i] && arr[i]!=first) {
-                
+                third=second;
                 second=arr[i];
             }
-            
-        System.out.println("Find highest Two Elements");
-        System.out.println("First : "+first+" & second : "+second);
+            else if(third<arr[i] && arr[i]!=first && arr[i]!=second){
+                third=arr[i];
+            }
+        System.out.println("Find highest Three Elements");
+        System.out.println("First : "+first+" & second : "+second+" & third : "+third);
         }
     }
 }
